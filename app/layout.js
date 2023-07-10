@@ -1,6 +1,6 @@
 import "@/node_modules/bulma/css/bulma.min.css"
 import "./globals.css"
-import Navbar from "@/components/Navbar"
+import { Navbar } from "@/components/index"
 
 export const metadata = {
   title: "Create Next App",
