@@ -26,7 +26,7 @@ export default function Navbar() {
       </div>
 
       <div id="navbarBasicExample" className="navbar-menu">
-        <div className="navbar-start">
+        {/* <div className="navbar-start">
           <a className="navbar-item">Home</a>
 
           <a className="navbar-item">Documentation</a>
@@ -42,15 +42,24 @@ export default function Navbar() {
               <a className="navbar-item">Report an issue</a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="navbar-end">
           <div className="navbar-item">
+            <a href="/">About</a>
+          </div>
+          <div className="navbar-item">
+            <a href="/">Project</a>
+          </div>
+          <div className="navbar-item">
+            <a href="/">Blog</a>
+          </div>
+          <div className="navbar-item">
             <div className="buttons">
+              <a className="button is-light">Resume</a>
               <a className="button is-primary">
-                <strong>Sign up</strong>
+                <strong>email me!</strong>
               </a>
-              <a className="button is-light">Log in</a>
             </div>
           </div>
         </div>

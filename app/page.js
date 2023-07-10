@@ -3,11 +3,17 @@ export default function Home() {
     <main>
       <section className="hero is-primary">
         <div className="hero-body">
-          <p className="title">Primary hero</p>
-          <p className="subtitle">Primary subtitle</p>
+          <p className="title">KEVIN LAM</p>
+          <p className="subtitle">Software Developer | Mechanical Engineer</p>
+          <p>
+            Building digital applications with a technical skillset and creative
+            approach
+          </p>
         </div>
       </section>
-      <section className="section">asdf</section>
+      <section className="section">ABOUT</section>
+      <section className="section">PROJECTS</section>
+      <section className="section">CONTACT</section>
     </main>
   )
 }
