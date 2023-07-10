@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
+
+#section-hero,
+#section-about,
+#section-projects,
+#section-contact {
+  border: 1px solid rgb(255, 0, 0);
+}
+
+body {
+  background-color: rgb(182, 182, 182);
+}
+
+/* ========= hero =========  */
+#section-hero {
+  margin: 10rem 23rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* ========= about =========  */
+#section-about {
+  margin: 10rem 23rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ========= projects =========  */
+#section-projects {
+  margin: 10rem 23rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ========= contact =========  */
+#section-contact {
+  margin: 10rem 23rem 0rem 23rem;
+  font-family: "Open Sans", sans-serif;
+}
