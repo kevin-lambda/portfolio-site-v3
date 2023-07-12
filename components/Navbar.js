@@ -6,8 +6,8 @@ export default function Navbar() {
 
   return (
     <nav className="navbar p-3" role="navigation" aria-label="main navigation">
-      <div className="navbar-brand">
-        <a href="/" className="navbar-item is-size-4" id="navbar-logo">
+      <div className="navbar-brand pl-1">
+        <a href="/" className="navbar-item is-size-3 p-1" id="navbar-logo">
           KL
         </a>
 
@@ -28,7 +28,7 @@ export default function Navbar() {
       </div>
       <div
         id="navbarBasicExample"
-        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+        className={`navbar-menu is-size-6 ${isActive ? "is-active" : ""}`}
       >
         <div className="navbar-end">
           <div className="navbar-item">
@@ -57,10 +57,13 @@ export default function Navbar() {
           ) : (
             <div className="navbar-item">
               <div className="buttons">
-                <a className="button is-grey-lighter" id="navbar-resume-button">
+                <a
+                  className="button is-grey-lighter is-size-6"
+                  id="navbar-resume-button"
+                >
                   Resume
                 </a>
-                <a className="button" id="navbar-contact-button">
+                <a className="button is-size-6" id="navbar-contact-button">
                   <strong>Hire me</strong>
                 </a>
               </div>
