@@ -1,12 +1,5 @@
 import "@/styles/index.scss"
-
-import { Montserrat } from "next/font/google"
 import { Navbar } from "@/components/index"
-
-// Font config
-const montserrat = Montserrat({
-  subsets: ["latin"],
-})
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +8,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={montserrat.className}>
+    <html lang="en">
       <body>
         <Navbar />
         {children}
