@@ -1,7 +1,26 @@
 import Image from "next/image"
 import extLink from "@/public/extLink.svg"
+import github from "@/public/github.svg"
 
 export default function Home() {
+  // LINKS
+  const LINK_MAILTO = "mailto:kevin.quoct.lam+portfolio2@gmail.com"
+  const LINK_RESUME = "/Kevin_Lam_resume.pdf"
+  const LINK_CURIOSITY_MEDIUM = "https://kevin-lambda.medium.com/"
+  const LINK_BLOG =
+    "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md"
+
+  const LINK_PROJ_1_PAGE = "/"
+  const LINK_PROJ_1_EXT = "/"
+  const LINK_PROJ_1_GITHUB = "/"
+
+  const LINK_PROJ_2 = "/"
+  const LINK_PROJ_3 = "/"
+
+  const LINK_PROJ_ADD_1_PAGE = "/"
+  const LINK_PROJ_ADD_1_EXT = "/"
+  const LINK_PROJ_ADD_1_GITHUB = "/"
+
   const svg_icon_size_h = 25
   const svg_icon_size_w = 25
 
@@ -10,10 +29,10 @@ export default function Home() {
       <section className="hero is-fullheight-with-navbar" id="section-hero">
         <div className="hero-body" id="hero-body">
           <div>
-            <p className="title" id="title">
+            <p className="title" id="hero-title">
               KEVIN LAM
             </p>
-            <p className="subtitle" id="subtitle">
+            <p className="subtitle" id="hero-subtitle">
               Software Developer & Mechanical Engineer
             </p>
             <p id="hero-description">
@@ -24,7 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section is-medium pt-0" id="section-about">
+      <section className="section is-large pt-3" id="section-about">
         <h2 className="pb-5" id="section-heading">
           ABOUT
         </h2>
@@ -32,19 +51,41 @@ export default function Home() {
           <div className="column is-three-fifths">
             <p className="pb-5">
               I am a software developer that enjoys learning and creating new
-              things. Before software, I was a project mechanical engineer in
-              aerospace for eight years. In that time, growing my problem
-              solving knowledge, collaboration experiences, and project
-              management skills.
+              things. Before working on software, I was a{" "}
+              <a
+                className="general-link-style"
+                target="_blank"
+                href={LINK_RESUME}
+              >
+                project mechanical engineer in aerospace
+              </a>{" "}
+              for eight years. In that time, growing my problem solving
+              knowledge, collaboration experiences, and project management
+              skills.
             </p>
             <p className="pb-5">
-              My curiousity leads me to new concepts, and that energizes my
-              enjoyment of learning and practicing software development. It's
-              this process that lets me thrive in my work.
+              My{" "}
+              <a
+                className="general-link-style"
+                href={LINK_CURIOSITY_MEDIUM}
+                target="_blank"
+              >
+                curiosity
+              </a>{" "}
+              leads me to new concepts, and that energizes my enjoyment of
+              learning and practicing software development. It's this process
+              that lets me thrive in my work.
             </p>
             <p>
-              I write a <a>developer blog</a> about my software development
-              journey.
+              I write a{" "}
+              <a
+                className="general-link-style"
+                target="_blank"
+                href={LINK_BLOG}
+              >
+                developer blog
+              </a>{" "}
+              about my software development journey.
             </p>
           </div>
           <div className="column" id="about-image-wrapper">
@@ -54,7 +95,7 @@ export default function Home() {
         {/* <div>sub section skills TBD w/ demonstration of tech understanding and code application</div> */}
       </section>
 
-      <section className="section is-medium" id="section-projects">
+      <section className="section is-medium pt-6" id="section-projects">
         <h2 className="pb-5" id="section-heading">
           FEATURED PROJECTS
         </h2>
@@ -62,15 +103,17 @@ export default function Home() {
           <div className="columns pb-5 pr-2">
             <div className="column is-two-fifths">
               <h3 className="pb-4" id="project-heading">
-                Bowlerator - Business landing page
+                <a className="general-link-style" href={LINK_PROJ_1_PAGE}>
+                  Bowlerator - Business landing page
+                </a>
               </h3>
 
               <div className="pb-3">
                 <p>A landing page for a meal generation bowl app.</p>
                 <ul>
-                  <li> ➡️ UX focused design</li>
-                  <li> ➡️ UX focused design</li>
-                  <li> ➡️ UX focused design</li>
+                  <li> • UX focused designasdf sdf </li>
+                  <li> • UX focused design</li>
+                  <li> • UX focused design</li>
                 </ul>
               </div>
 
@@ -79,7 +122,7 @@ export default function Home() {
               </div>
 
               <div className="pb-3">
-                <a className="px-1" href="/">
+                <a className="px-2" href={LINK_PROJ_1_EXT}>
                   <Image
                     src={extLink}
                     width={svg_icon_size_w}
@@ -87,17 +130,9 @@ export default function Home() {
                     alt="external link icon"
                   />
                 </a>
-                <a className="px-1" href="/">
+                <a className="px-2" href={LINK_PROJ_1_GITHUB}>
                   <Image
-                    src={extLink}
-                    width={25}
-                    height={25}
-                    alt="external link icon"
-                  />
-                </a>
-                <a className="px-1" href="/">
-                  <Image
-                    src={extLink}
+                    src={github}
                     width={25}
                     height={25}
                     alt="external link icon"
@@ -106,7 +141,9 @@ export default function Home() {
               </div>
             </div>
             <div className="column is-three-fifths" id="project-image-wrapper">
-              <img src="/holder.jpg" alt="sdf" id="project-image" />
+              <a href={LINK_PROJ_1_PAGE} id="project-image">
+                <img src="/holder.jpg" alt="sdf" id="project-image" />
+              </a>
             </div>
           </div>
           <div className="columns pb-5 pr-2">
@@ -118,9 +155,9 @@ export default function Home() {
               <div className="pb-3">
                 <p>A landing page for a meal generation bowl app.</p>
                 <ul>
-                  <li> ➡️ UX focused design</li>
-                  <li> ➡️ UX focused design</li>
-                  <li> ➡️ UX focused design</li>
+                  <li> ￭ UX focused design</li>
+                  <li> ￭ UX focused design</li>
+                  <li> ￭ UX focused design</li>
                 </ul>
               </div>
 
@@ -223,7 +260,12 @@ export default function Home() {
                 <article className="tile is-child" id="tile">
                   <header>
                     <h3 className="pb-2" id="project-add-heading">
-                      Bowlerator
+                      <a
+                        className="general-link-style"
+                        href={LINK_PROJ_ADD_1_PAGE}
+                      >
+                        Bowlerator
+                      </a>
                     </h3>
                     <div className="pb-3 is-size-6">
                       <p>
@@ -239,7 +281,7 @@ export default function Home() {
                       <p>Bulma, React, Javascript </p>
                     </div>
                     <div className="pt-0 pb-0">
-                      <a className="px-1" href="/">
+                      <a className="px-2" href={LINK_PROJ_ADD_1_EXT}>
                         <Image
                           src={extLink}
                           width={25}
@@ -247,17 +289,9 @@ export default function Home() {
                           alt="external link icon"
                         />
                       </a>
-                      <a className="px-1" href="/">
+                      <a className="px-2" href={LINK_PROJ_ADD_1_GITHUB}>
                         <Image
-                          src={extLink}
-                          width={25}
-                          height={25}
-                          alt="external link icon"
-                        />
-                      </a>
-                      <a className="px-1" href="/">
-                        <Image
-                          src={extLink}
+                          src={github}
                           width={25}
                           height={25}
                           alt="external link icon"
@@ -393,7 +427,12 @@ export default function Home() {
         <h2 className="pb-5 is-size-1 " id="section-heading">
           CONTACT
         </h2>
-        <a className="button is-size-6" id="navbar-contact-button">
+        <a
+          href={LINK_MAILTO}
+          target="_blank"
+          className="button is-size-6"
+          id="navbar-contact-button"
+        >
           <strong>Send me a message</strong>
         </a>
       </section>

@@ -1,17 +1,12 @@
 export default function Footer() {
   return (
     <footer className="footer pb-5" id="footer">
-      <div className="content has-text-centered">
+      <div className="content has-text-centered" id="footer-wrapper">
+        <p className="mb-1">Built by Kevin Lam.</p>
         <p>
-          <strong>Bulma</strong> by{" "}
-          <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is
-          licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The
-          website content is licensed{" "}
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
-            CC BY NC SA 4.0
-          </a>
-          .
+          Design based on{" "}
+          <a href="https://brittanychiang.com/">Brittany Chiang</a>. Icons{" "}
+          <a>attribution</a>.
         </p>
       </div>
     </footer>
