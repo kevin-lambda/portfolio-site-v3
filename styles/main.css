@@ -203,6 +203,7 @@ html {
 }
 #project-add-tech {
   border: 1px solid rgb(12, 182, 194);
+  font-family: var(--font-style);
   /* align-items: flex-end; */
   bottom: 0;
 }
