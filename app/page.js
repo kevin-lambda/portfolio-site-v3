@@ -1,4 +1,3 @@
-import svg_extLink from "@/public/extLink.svg"
 import Image from "next/image"
 import extLink from "@/public/extLink.svg"
 
@@ -391,12 +390,11 @@ export default function Home() {
         className="section is-medium has-text-centered"
         id="section-contact"
       >
-        <h2 className="pb-5" id="section-heading">
+        <h2 className="pb-5 is-size-1 " id="section-heading">
           CONTACT
         </h2>
-        <p>Lets connect!</p>
-        <a className="button is-primary">
-          <strong>Email me</strong>
+        <a className="button is-size-6" id="navbar-contact-button">
+          <strong>Send me a message</strong>
         </a>
       </section>
     </main>
