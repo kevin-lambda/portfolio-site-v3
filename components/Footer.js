@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="content has-text-centered" id="footer-wrapper">
         <p className="mb-1">Built by Kevin Lam.</p>
         <p>
-          Design based on{" "}
+          Design based from{" "}
           <a href="https://brittanychiang.com/" className="general-link-style">
             Brittany Chiang
           </a>

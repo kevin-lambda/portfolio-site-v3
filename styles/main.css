@@ -1,43 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap");
 
+/* ========================  */
+/* ========= base =========  */
+/* ========================  */
 :root {
-  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-  --transition-main-links: 0.3;
-  --transition-about: 0.5s;
-
   --primary: #9832f8;
 
   --text: hsl(0, 0%, 29%);
   --text-white: rgb(255, 255, 255);
 
+  /* --body-background-color: #f5fff9; */
+  --body-background-color: #f6f9fc;
+
+  --about-image-saturate: 0%;
+  --about-image-brightness: 95%;
+  --about-image-hover-saturate: 95%;
+  --about-image-hover-brightness: 93%;
+
   --line-thickness: 1px;
   --section-heading: 2.25rem;
+
+  --border-radius: 6px;
 
   --font-style: "Montserrat", sans-serif;
   --font-neutral: "Open Sans", sans-serif;
 
-  --border-radius: 6px;
-}
-
-/* debugging */
-/* debugging */
-/* debugging */
-* {
-  /* border: 1px solid black; */
-}
-/* debugging */
-/* debugging */
-/* debugging */
-
-#section-hero,
-#section-about,
-#section-projects,
-#section-contact {
-  border: 1px solid rgb(255, 0, 0);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition-main-links: 0.3;
+  --transition-about: 0.5s;
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--body-background-color);
 }
 
 html {
@@ -68,13 +62,18 @@ html {
     brightness(98%) contrast(99%);
 }
 
+/* ==========================  */
 /* ========= navbar =========  */
+/* ==========================  */
 .navbar {
   font-family: var(--font-style);
+  background-color: var(--body-background-color);
 }
 #navbar-logo:hover {
+  /* keep same color on hover*/
   color: var(--text);
 }
+
 .navbar-end > .navbar-item > a {
   color: var(--text);
   transition: var(--transition);
@@ -83,6 +82,7 @@ html {
   color: var(--primary);
   transition: var(--transition);
 }
+
 #navbar-resume-button {
   transition: var(--transition);
 }
@@ -91,6 +91,7 @@ html {
   transition: var(--transition);
   color: var(--primary);
 }
+
 #navbar-contact-button {
   transition: var(--transition);
   border: var(--line-thickness) solid var(--primary);
@@ -101,10 +102,14 @@ html {
   transition: var(--transition);
   color: var(--text-white);
 }
+
+/* ========================  */
 /* ========= hero =========  */
+/* ========================  */
 #section-hero {
   font-family: var(--font-style);
 }
+
 .hero-body {
   max-width: 1500px;
   margin: 0 auto;
@@ -115,35 +120,36 @@ html {
 }
 #hero-title {
   font-size: 4.5rem;
-  /* font-size: clamp(1rem, 10vw, 2rem); */
 }
-
 #hero-subtitle {
   font-size: 2.25rem;
-  /* font-size: clamp(1rem, 10vw, 2rem); */
 }
-
 #hero-description {
   font-family: var(--font-neutral);
 }
+
+/* =========================  */
 /* ========= about =========  */
+/* =========================  */
 #section-about {
-  /* margin: 10rem 23rem; */
   font-family: var(--font-neutral);
-  max-width: 880px;
+  max-width: 950px;
   margin: 0 auto;
 }
 #about-image-wrapper {
   text-align: center;
 }
+
 #about-image {
   border-radius: var(--border-radius);
-  filter: saturate(50%);
+  filter: saturate(var(--about-image-saturate))
+    brightness(var(--about-image-brightness));
   transition: var(--transition-about);
 }
 #about-image:hover {
   border-radius: var(--border-radius);
-  filter: saturate(80%);
+  filter: saturate(var(--about-image-hover-saturate))
+    brightness(var(--about-image-hover-brightness));
   transition: var(--transition-about);
 }
 
@@ -153,25 +159,27 @@ html {
     max-width: 300px;
     margin: 0 auto;
   }
+
   #about-image {
     border-radius: var(--border-radius);
-    filter: saturate(50%);
+    filter: saturate(var(--about-image-saturate))
+      brightness(var(--about-image-brightness));
     transition: var(--transition-about);
   }
   #about-image:hover {
     border-radius: var(--border-radius);
-    filter: saturate(80%);
+    filter: saturate(var(--about-image-hover-saturate))
+      brightness(var(--about-image-hover-brightness));
     transition: var(--transition-about);
   }
 }
 
+/* ============================  */
 /* ========= projects =========  */
+/* ============================  */
 #section-projects {
-  /* margin: 10rem 23rem; */
   max-width: 1200px;
-  /* max-width: 880px; */
   margin: 0 auto;
-  border: 1px solid rgb(47, 0, 255);
   font-family: var(--font-neutral);
 }
 
@@ -193,9 +201,7 @@ html {
 
 @media screen and (max-width: 768px) {
   #project-image-wrapper {
-    border: 1px solid rgb(153, 0, 255);
     position: relative;
-    /* padding-top: 56.25%; 16:9 Aspect Ratio */
     padding-top: 65%;
   }
 }
@@ -206,8 +212,7 @@ html {
   top: 0;
   width: 100%;
   height: auto;
-  padding: 0.5rem 4rem 0rem 4rem;
-  /* border: 1px solid rgb(0, 255, 0); */
+  padding: 0.5rem 3rem 0rem 3rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -218,7 +223,6 @@ html {
     width: 100%;
     height: auto;
     padding: 0.5rem 2rem 0rem 2rem;
-    /* border: 1px solid rgb(255, 0, 0); */
   }
 }
 
@@ -230,20 +234,18 @@ html {
     width: 100%;
     height: auto;
     padding: 0rem 2rem 0rem 2rem;
-    border: 1px solid rgb(114, 0, 167);
   }
 }
 
+/* ========================================  */
 /* ========= project - additional =========  */
+/* ========================================  */
 #project-add-heading {
-  /* border: 1px solid rgb(235, 0, 0); */
   font-family: var(--font-style);
   font-size: 1.42rem;
 }
 #project-add-tech {
-  border: 1px solid rgb(12, 182, 194);
   font-family: var(--font-style);
-  /* align-items: flex-end; */
   bottom: 0;
 }
 #tile-parent {
@@ -260,13 +262,23 @@ html {
   flex-direction: column;
   padding: 1.25rem;
 }
+/* ===========================  */
 /* ========= contact =========  */
+/* ===========================  */
 #section-contact {
-  /* margin: 10rem 23rem 0rem 23rem; */
   font-family: var(--font-neutral);
 }
 
+/* ==========================  */
 /* ========= footer =========  */
+/* ==========================  */
 #footer-wrapper {
   font-size: 0.8rem;
+}
+
+/* ======================= */
+/* ====== debugging ====== */
+/* ======================= */
+* {
+  /* border: 1px solid black; */
 }
