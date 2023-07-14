@@ -8,7 +8,7 @@ export default function Home() {
   const LINK_BLOG =
     "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md"
 
-  const testObject = {
+  const projectFeat1 = {
     text_title: "This title",
     text_description: "im describing things in htis sentence",
     text_features: ["feature 1", "feature 2", "feature 3"],
@@ -20,10 +20,86 @@ export default function Home() {
     active_icon_live: true,
     active_icon_github: true,
   }
-  const testAddObject = {
-    text_title: "This add title",
-    text_description: "im describing things in htis add sentence",
+  const projectFeat2 = {
+    text_title: "This title",
+    text_description: "im describing things in htis sentence",
+    text_features: ["feature 1", "feature 2", "feature 3"],
     text_technology: "bulma, css, javascript",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    image_project: "/holder.jpg",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+  const projectFeat3 = {
+    text_title: "This title",
+    text_description: "im describing things in htis sentence",
+    text_features: ["feature 1", "feature 2", "feature 3"],
+    text_technology: "bulma, css, javascript",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    image_project: "/holder.jpg",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+
+  const projectAdd1 = {
+    text_title: "Title",
+    text_description: "description",
+    text_technology: "tech 1, tech 2, tech 3",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+  const projectAdd2 = {
+    text_title: "Title",
+    text_description: "description",
+    text_technology: "tech 1, tech 2, tech 3",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+  const projectAdd3 = {
+    text_title: "Title",
+    text_description: "description",
+    text_technology: "tech 1, tech 2, tech 3",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+  const projectAdd4 = {
+    text_title: "Title",
+    text_description: "description",
+    text_technology: "tech 1, tech 2, tech 3",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+  const projectAdd5 = {
+    text_title: "Title",
+    text_description: "description",
+    text_technology: "tech 1, tech 2, tech 3",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
+
+  const projectAdd6 = {
+    text_title: "Title",
+    text_description: "description",
+    text_technology: "tech 1, tech 2, tech 3",
     link_proj_page: "https://www.wikipedia.org/",
     link_live: "https://www.wikipedia.org/",
     link_github: "https://www.wikipedia.org/",
@@ -113,9 +189,9 @@ export default function Home() {
           FEATURED PROJECTS
         </h2>
         <div className="projects-all-wrapper">
-          <ProjectFeatured projectData={testObject} />
-          <ProjectFeatured projectData={testObject} />
-          <ProjectFeatured projectData={testObject} />
+          <ProjectFeatured projectData={projectFeat1} />
+          <ProjectFeatured projectData={projectFeat2} />
+          <ProjectFeatured projectData={projectFeat3} />
 
           <div className="additional-projects">
             <h2 className="pb-4 pt-5" id="section-heading">
@@ -125,14 +201,14 @@ export default function Home() {
               <a>View all projects</a>
             </h3> */}
             <div className="tile is-ancestor">
-              <ProjectAdditional projectAddData={testAddObject} />
-              <ProjectAdditional projectAddData={testAddObject} />
-              <ProjectAdditional projectAddData={testAddObject} />
+              <ProjectAdditional projectAddData={projectAdd1} />
+              <ProjectAdditional projectAddData={projectAdd2} />
+              <ProjectAdditional projectAddData={projectAdd3} />
             </div>
             <div className="tile is-ancestor">
-              <ProjectAdditional projectAddData={testAddObject} />
-              <ProjectAdditional projectAddData={testAddObject} />
-              <ProjectAdditional projectAddData={testAddObject} />
+              <ProjectAdditional projectAddData={projectAdd4} />
+              <ProjectAdditional projectAddData={projectAdd5} />
+              <ProjectAdditional projectAddData={projectAdd6} />
             </div>
           </div>
         </div>

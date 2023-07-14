@@ -2,37 +2,4 @@
 @use "bulma"
   with(
     $primary: rgb(152, 50, 248),
-    // $$text: $grey-dark
-
-    
-    // $link: rgb(195, 0, 255),
-    // $info: rgb(230, 221, 146),
-    // $text-strong: rgb(0,0,0),
-    // $background: rgb(180, 66, 66),
-
   );
-
-// 1 theme cta, highlight color
-// 2 Main text color
-// 3 impact title color
-// 4
-
-//  PRIMARY - ACTION accent color: buttons, links, icon fill state
-//  brighter text: title, heading 2, sub button?
-//  darker text: most other text color
-//  neutral: background: darkest -> lightest OR lightest -> darkest
-//   #fff to #bcbcbc
-
-// $custom-colors:(
-//   "custom-accent": ($custom-accent),
-//   "test2": ($custom-text-title-impact),
-// ),
-// $body-background-color: $custom-background,
-
-// $custom-accent: rgb(226, 205, 166);
-// $custom-accent-invert: findColorInvert($custom-accent);
-// $custom-text-title-impact: rgb(255, 0, 0);
-// $custom-text-main: rgb(41, 41, 41);
-// $custom-background: rgb(233, 233, 233);
-// $custom-background-card: rgb(177, 177, 177);
-// $invert-placeholder: rgb(0, 0, 0);
