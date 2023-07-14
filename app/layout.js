@@ -1,5 +1,5 @@
 import "@/styles/index.scss"
-import { Navbar } from "@/components/index"
+import { Navbar, Footer } from "@/components/index"
 
 export const metadata = {
   title: "Create Next App",
@@ -12,6 +12,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

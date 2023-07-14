@@ -8,3 +8,16 @@ notes
 bug list:
 
 - [s] navbar hamburger doesnt return buttons if fill widthed again
+
+attributions:
+svg icons - https://www.svgrepo.com/collection/wolf-kit-rounded-line-icons/
+
+sources:
+
+- how to do images: https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/
+
+mobile: up to 768px
+tablet: from 769px
+desktop: from 1024px
+widescreen: from 1216px
+fullhd: from 1408px

@@ -19,7 +19,7 @@
 /* debugging */
 /* debugging */
 * {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 /* debugging */
 /* debugging */
@@ -105,7 +105,10 @@ body {
   font-family: var(--font-neutral);
   max-width: 880px;
   margin: 0 auto;
-  border: 1px solid rgb(47, 0, 255);
+}
+
+#about-image-wrapper {
+  text-align: center;
 }
 
 /* ========= projects =========  */
@@ -120,9 +123,94 @@ body {
 
 #project-heading {
   font-family: var(--font-style);
+  font-size: 1.42rem;
+}
+
+#project-tech {
+  font-family: var(--font-style);
+}
+
+#project-image-wrapper {
+  /* border: 1px solid rgb(153, 0, 255); */
+  position: relative;
+  /* padding-top: 56.25%; 16:9 Aspect Ratio */
+  padding-top: 33%;
+}
+
+@media screen and (max-width: 768px) {
+  #project-image-wrapper {
+    border: 1px solid rgb(153, 0, 255);
+    position: relative;
+    /* padding-top: 56.25%; 16:9 Aspect Ratio */
+    padding-top: 65%;
+  }
+}
+
+#project-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 4rem 0rem 4rem;
+  /* border: 1px solid rgb(0, 255, 0); */
+}
+
+@media screen and (max-width: 1024px) {
+  #project-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0.5rem 2rem 0rem 2rem;
+    /* border: 1px solid rgb(255, 0, 0); */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #project-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0rem 2rem 0rem 2rem;
+    border: 1px solid rgb(114, 0, 167);
+  }
+}
+
+/* ========= project - additional =========  */
+#project-add-heading {
+  /* border: 1px solid rgb(235, 0, 0); */
+  font-family: var(--font-style);
+  font-size: 1.42rem;
+}
+#project-add-tech {
+  border: 1px solid rgb(12, 182, 194);
+  /* align-items: flex-end; */
+  bottom: 0;
+}
+#tile-parent {
+  border-radius: 6px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0px 0 1px rgba(10, 10, 10, 0.02);
+  color: hsl(0, 0%, 29%);
+  margin: 0.75rem;
+}
+
+#tile {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1.25rem;
 }
 /* ========= contact =========  */
 #section-contact {
   /* margin: 10rem 23rem 0rem 23rem; */
   font-family: var(--font-neutral);
+}
+
+/* ========= footer =========  */
+#footer {
 }
