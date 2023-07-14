@@ -2,6 +2,8 @@ import Image from "next/image"
 import extLink from "@/public/extLink.svg"
 import github from "@/public/github.svg"
 
+import { ProjectFeatured } from "@/components"
+
 export default function Home() {
   // LINKS
   const LINK_MAILTO = "mailto:kevin.quoct.lam+portfolio2@gmail.com"
@@ -23,6 +25,19 @@ export default function Home() {
 
   const svg_icon_size_h = 25
   const svg_icon_size_w = 25
+
+  const testObject = {
+    text_title: "This title",
+    text_description: "im describing things in htis sentence",
+    text_features: ["feature 1", "feature 2", "feature 3"],
+    text_technology: "bulma, css, javascript",
+    link_proj_page: "https://www.wikipedia.org/",
+    link_live: "https://www.wikipedia.org/",
+    link_github: "https://www.wikipedia.org/",
+    image_project: "/holder.jpg",
+    active_icon_live: true,
+    active_icon_github: true,
+  }
 
   return (
     <main>
@@ -89,7 +104,11 @@ export default function Home() {
             </p>
           </div>
           <div className="column" id="about-image-wrapper">
-            <img src="/holder.jpg" alt="sdf" id="about-image" />
+            <img
+              src="/images/prof.jpg"
+              alt="profile picture"
+              id="about-image"
+            />
           </div>
         </div>
         {/* <div>sub section skills TBD w/ demonstration of tech understanding and code application</div> */}
@@ -99,7 +118,8 @@ export default function Home() {
         <h2 className="pb-5" id="section-heading">
           FEATURED PROJECTS
         </h2>
-        <div>
+        <div className="projects-featured-wrapper">
+          <ProjectFeatured projectData={testObject} />
           <div className="columns pb-5 pr-2">
             <div className="column is-two-fifths">
               <h3 className="pb-4" id="project-heading">
@@ -122,7 +142,7 @@ export default function Home() {
               </div>
 
               <div className="pb-3">
-                <a className="px-2" href={LINK_PROJ_1_EXT}>
+                <a className="px-2" href={LINK_PROJ_1_EXT} id="icon-hover-fill">
                   <Image
                     src={extLink}
                     width={svg_icon_size_w}
@@ -130,7 +150,11 @@ export default function Home() {
                     alt="external link icon"
                   />
                 </a>
-                <a className="px-2" href={LINK_PROJ_1_GITHUB}>
+                <a
+                  className="px-2"
+                  href={LINK_PROJ_1_GITHUB}
+                  id="icon-hover-fill"
+                >
                   <Image
                     src={github}
                     width={25}
@@ -281,7 +305,11 @@ export default function Home() {
                       <p>Bulma, React, Javascript </p>
                     </div>
                     <div className="pt-0 pb-0">
-                      <a className="px-2" href={LINK_PROJ_ADD_1_EXT}>
+                      <a
+                        className="px-2"
+                        href={LINK_PROJ_ADD_1_EXT}
+                        id="icon-hover-fill"
+                      >
                         <Image
                           src={extLink}
                           width={25}
@@ -289,7 +317,11 @@ export default function Home() {
                           alt="external link icon"
                         />
                       </a>
-                      <a className="px-2" href={LINK_PROJ_ADD_1_GITHUB}>
+                      <a
+                        className="px-2"
+                        href={LINK_PROJ_ADD_1_GITHUB}
+                        id="icon-hover-fill"
+                      >
                         <Image
                           src={github}
                           width={25}
