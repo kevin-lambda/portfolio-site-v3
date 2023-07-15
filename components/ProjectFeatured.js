@@ -22,7 +22,7 @@ export default function ProjectFeatured(props) {
   } = props.projectData
 
   return (
-    <div className="columns pb-5 pr-2">
+    <div className="columns pb-6 pr-2">
       <div className="column is-two-fifths">
         <h3 className="pb-4" id="project-heading">
           <a className="general-link-style" href={link_proj_page}>
