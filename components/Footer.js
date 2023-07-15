@@ -1,6 +1,6 @@
 import Image from "next/image"
 import linkedin from "@/public/linkedin.svg"
-import medium from "@/public/medium.svg"
+import medium from "@/public/medium1.svg"
 import github_square from "@/public/github_square.svg"
 
 export default function Footer() {

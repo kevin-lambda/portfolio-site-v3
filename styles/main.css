@@ -4,17 +4,21 @@
 /* ========= base =========  */
 /* ========================  */
 :root {
-  --primary: #9832f8;
+  --primary: rgb(151, 48, 248);
 
   --text: hsl(0, 0%, 29%);
   --text-white: rgb(255, 255, 255);
 
   --body-background-color: #f6f9fc;
 
-  --about-image-saturate: 0%;
+  --about-image-saturate: 100%;
+  --about-image-brightness: 100%;
+  --about-image-hover-saturate: 100%;
+  --about-image-hover-brightness: 100%;
+  /* --about-image-saturate: 0%;
   --about-image-brightness: 115%;
   --about-image-hover-saturate: 95%;
-  --about-image-hover-brightness: 100%;
+  --about-image-hover-brightness: 100%; */
 
   --line-thickness: 1px;
   --section-heading: 2.25rem;
@@ -211,6 +215,11 @@ html {
   width: 100%;
   height: auto;
   padding: 0.5rem 3rem 0rem 3rem;
+  border-radius: var(--border-radius);
+  border: 1px solid rgb(0, 0, 0, 0);
+  transition: var(--transition);
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 @media screen and (max-width: 1024px) {
@@ -221,6 +230,10 @@ html {
     width: 100%;
     height: auto;
     padding: 0.5rem 2rem 0rem 2rem;
+    border: 1px solid rgb(0, 0, 0, 0);
+    transition: var(--transition);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+      0 15px 40px rgba(166, 173, 201, 0.2);
   }
 }
 
@@ -232,7 +245,18 @@ html {
     width: 100%;
     height: auto;
     padding: 0rem 2rem 0rem 2rem;
+    border: 1px solid rgb(0, 0, 0, 0);
+    transition: var(--transition);
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+      0 15px 40px rgba(166, 173, 201, 0.2);
   }
+}
+
+#project-image:hover {
+  border: 1px solid var(--primary);
+  transition: var(--transition);
+  box-shadow: 0 5px 10px rgba(151, 48, 248, 0.05),
+    0 15px 40px rgba(151, 48, 248, 0.2);
 }
 
 /* ========================================  */

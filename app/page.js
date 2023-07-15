@@ -1,7 +1,6 @@
 import { ProjectFeatured, ProjectAdditional } from "@/components"
 
 export default function Home() {
-  // LINKS
   const LINK_MAILTO = "mailto:kevin.quoct.lam+portfolio2@gmail.com"
   const LINK_RESUME = "/Kevin_Lam_resume.pdf"
   const LINK_CURIOSITY_MEDIUM = "https://kevin-lambda.medium.com/"
@@ -9,102 +8,137 @@ export default function Home() {
     "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md"
 
   const projectFeat1 = {
-    text_title: "This title",
-    text_description: "im describing things in htis sentence",
-    text_features: ["feature 1", "feature 2", "feature 3"],
-    text_technology: "bulma, css, javascript",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
-    image_project: "/holder.jpg",
+    text_title: "Bowlerator - Business Landing Page",
+    text_description: "Landing page for a food bowl generator app",
+    text_features: ["Product story emphasized design", "Wireframed layout"],
+    text_technology: "Nextjs, Bulma, Typescript",
+    link_proj_page: "https://bowlerator.vercel.app/",
+    link_live: "https://bowlerator.vercel.app/",
+    link_github: "https://github.com/kevin-lambda/bowlerator",
+    link_medium:
+      "https://kevin-lambda.medium.com/jr-dev-asks-whats-a-basic-website-layout-to-use-for-a-business-35ff4a7ef700",
+    image_project: "/images/bowl.jpg",
     active_icon_live: true,
     active_icon_github: true,
+    active_icon_medium: true,
   }
   const projectFeat2 = {
-    text_title: "This title",
-    text_description: "im describing things in htis sentence",
-    text_features: ["feature 1", "feature 2", "feature 3"],
-    text_technology: "bulma, css, javascript",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
-    image_project: "/holder.jpg",
+    text_title: "National Park Stamps - Data fetch & rendering",
+    text_description: "A minimalist app that finds national park stamps.",
+    text_features: [
+      "3rd party API integration",
+      "Data filtering",
+      "Responsive UI",
+    ],
+    text_technology: "React, Pico, Javascript",
+    link_proj_page: "https://kevin-lambda.github.io/nat-park-stamps/",
+    link_live: "https://kevin-lambda.github.io/nat-park-stamps/",
+    link_github: "https://github.com/kevin-lambda/nat-park-stamps",
+    link_medium: "",
+    image_project: "/images/parks.jpg",
     active_icon_live: true,
     active_icon_github: true,
+    active_icon_medium: false,
   }
   const projectFeat3 = {
-    text_title: "This title",
-    text_description: "im describing things in htis sentence",
-    text_features: ["feature 1", "feature 2", "feature 3"],
-    text_technology: "bulma, css, javascript",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
-    image_project: "/holder.jpg",
+    text_title: "Gardening Suggestor - Fullstack recommendation algorithm app",
+    text_description: "Suggests suitable gardening plants per user conditions.",
+    text_features: [
+      "Recommendation algorithm based on user",
+      "CRUD operations",
+      "User Authentication",
+    ],
+    text_technology: "Firebase, p5js, Express, Postgres",
+    link_proj_page: "https://wormseye-d1c52.web.app/",
+    link_live: "https://wormseye-d1c52.web.app/",
+    link_github: "https://github.com/kevin-lambda/fsa-worms-eye-view",
+    link_medium: "",
+    image_project: "/images/worm.jpg",
     active_icon_live: true,
     active_icon_github: true,
+    active_icon_medium: false,
   }
 
   const projectAdd1 = {
-    text_title: "Title",
-    text_description: "description",
-    text_technology: "tech 1, tech 2, tech 3",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
+    text_title: "Solari - Data calculation & visualization",
+    text_description:
+      "Planning tool that simulates energy output of a solar project. Managed bulk data to do backend calculations. Results visualized with recharts.",
+    text_technology: "Recharts, Nextjs, Bulma",
+    link_proj_page: "https://solari-kl.vercel.app/",
+    link_live: "https://solari-kl.vercel.app/",
+    link_github: "https://github.com/kevin-lambda/solari",
+    link_medium: "",
     active_icon_live: true,
     active_icon_github: true,
+    active_icon_medium: false,
   }
   const projectAdd2 = {
-    text_title: "Title",
-    text_description: "description",
-    text_technology: "tech 1, tech 2, tech 3",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
+    text_title: "Dakine Ipsum - Ruleset based text generator",
+    text_description:
+      "Lorem Ipsum filler text using Hawaii Creole English. Generated with a Context Free Grammar based on formal english grammar production ruleset.",
+    text_technology: "Custom Context Free Grammar, Tracery, React",
+    link_proj_page: "https://kevin-lambda.github.io/dakine-ipsum/",
+    link_live: "https://kevin-lambda.github.io/dakine-ipsum/",
+    link_github: "https://github.com/kevin-lambda/dakine-ipsum",
+    link_medium: "",
     active_icon_live: true,
     active_icon_github: true,
+    active_icon_medium: false,
   }
   const projectAdd3 = {
-    text_title: "Title",
-    text_description: "description",
-    text_technology: "tech 1, tech 2, tech 3",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
+    text_title: "Creative projects portfolio - CMS integrated portfolio",
+    text_description: "Portfolio for my non-software focused creative projects",
+    text_technology: "Gatsbyjs, Contentful CMS, Netlify",
+    link_proj_page: "https://kevin-lam.netlify.app/",
+    link_live: "https://kevin-lam.netlify.app/",
+    link_github: "https://github.com/kevin-lambda/personal-portfolio",
+    link_medium: "",
     active_icon_live: true,
     active_icon_github: true,
+    active_icon_medium: false,
   }
   const projectAdd4 = {
-    text_title: "Title",
-    text_description: "description",
-    text_technology: "tech 1, tech 2, tech 3",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
+    text_title: "Bitbot - Exploration of chatGPT interaction methodologies",
+    text_description:
+      "Proof of concept exploring a non-text based user interaction contexted AI chatbot.",
+    text_technology: "OpenAI chatGPT, NextJS, Bulma",
+    link_proj_page: "https://hello-ai-seven.vercel.app/",
+    link_live: "https://hello-ai-seven.vercel.app/",
+    link_github: "",
+    link_medium: "",
     active_icon_live: true,
-    active_icon_github: true,
+    active_icon_github: false,
+    active_icon_medium: false,
   }
   const projectAdd5 = {
-    text_title: "Title",
-    text_description: "description",
-    text_technology: "tech 1, tech 2, tech 3",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
-    active_icon_live: true,
-    active_icon_github: true,
+    text_title: "Cash Stack - Data fetching",
+    text_description:
+      "Compares the fetched data of a cost of a product, to the height of the cost, stacked as one dollar bills.",
+    text_technology: "jQuery, Cheerio, recharts",
+    link_proj_page:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#cash-stack",
+    link_live:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#cash-stack",
+    link_github: "",
+    link_medium: "",
+    active_icon_live: false,
+    active_icon_github: false,
+    active_icon_medium: false,
   }
-
   const projectAdd6 = {
-    text_title: "Title",
-    text_description: "description",
-    text_technology: "tech 1, tech 2, tech 3",
-    link_proj_page: "https://www.wikipedia.org/",
-    link_live: "https://www.wikipedia.org/",
-    link_github: "https://www.wikipedia.org/",
+    text_title: "Hiking map redesign - hi-fi prototype in UX case study",
+    text_description:
+      "High fidelity prototype redesign of the Washington Trails Association maps feature. Focusing on hike discoverability and informational visibility.",
+    text_technology: "Figma, Dot vote ideation, User story design approach",
+    link_proj_page:
+      "https://www.figma.com/proto/yP1A1ZnipOg4OKj0XNO6Rr/WTA-project?page-id=0%3A1&node-id=67-552&viewport=-810%2C149%2C0.11&scaling=scale-down&starting-point-node-id=67%3A552&show-proto-sidebar=1",
+    link_live:
+      "https://www.figma.com/proto/yP1A1ZnipOg4OKj0XNO6Rr/WTA-project?page-id=0%3A1&node-id=67-552&viewport=-810%2C149%2C0.11&scaling=scale-down&starting-point-node-id=67%3A552&show-proto-sidebar=1",
+    link_github: "",
+    link_medium: "",
     active_icon_live: true,
-    active_icon_github: true,
+    active_icon_github: false,
+    active_icon_medium: false,
   }
 
   return (
@@ -179,10 +213,10 @@ export default function Home() {
             />
           </div>
         </div>
-        {/* <div>sub section skills TBD w/ demonstration of tech understanding and code application</div> */}
       </section>
 
       {/* <section>experience</section> */}
+      {/* <div>sub section skills TBD w/ demonstration of tech understanding and code application</div> */}
 
       <section className="section is-medium pt-6" id="section-projects">
         <h2 className="pb-5" id="section-heading">

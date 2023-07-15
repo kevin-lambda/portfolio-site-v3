@@ -4,6 +4,7 @@ export default function ProjectAdditional(props) {
   const ICON_SIZE = 25
   const ICON_GITHUB = "/github.svg"
   const ICON_LIVE = "/extLink.svg"
+  const ICON_MEDIUM = "/medium1.svg"
 
   const {
     text_title,
@@ -12,8 +13,10 @@ export default function ProjectAdditional(props) {
     link_proj_page,
     link_live,
     link_github,
+    link_medium,
     active_icon_live,
     active_icon_github,
+    active_icon_medium,
   } = props.projectAddData
 
   return (
@@ -51,6 +54,21 @@ export default function ProjectAdditional(props) {
                   width={ICON_SIZE}
                   height={ICON_SIZE}
                   alt="github link icon"
+                />
+              </a>
+            ) : null}
+            {active_icon_medium ? (
+              <a
+                className="px-2"
+                target="_blank"
+                href={link_medium}
+                id="icon-hover-fill"
+              >
+                <Image
+                  src={ICON_MEDIUM}
+                  width={ICON_SIZE}
+                  height={ICON_SIZE}
+                  alt="medium link icon"
                 />
               </a>
             ) : null}
