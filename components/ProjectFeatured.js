@@ -34,7 +34,7 @@ export default function ProjectFeatured(props) {
           <p>{text_description}</p>
           <ul>
             {text_features.map((elem, index) => (
-              <li key={index}> • {elem}</li>
+              <li key={index}> ⇢ {elem}</li>
             ))}
           </ul>
         </div>

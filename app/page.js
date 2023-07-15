@@ -25,11 +25,7 @@ export default function Home() {
   const projectFeat2 = {
     text_title: "National Park Stamps - Data fetch & rendering",
     text_description: "A minimalist app that finds national park stamps.",
-    text_features: [
-      "3rd party API integration",
-      "Data filtering",
-      "Responsive UI",
-    ],
+    text_features: ["3rd party API integration", "Data filtering"],
     text_technology: "React, Pico, Javascript",
     link_proj_page: "https://kevin-lambda.github.io/nat-park-stamps/",
     link_live: "https://kevin-lambda.github.io/nat-park-stamps/",
@@ -45,7 +41,7 @@ export default function Home() {
     text_description: "Suggests suitable gardening plants per user conditions.",
     text_features: [
       "Recommendation algorithm based on user",
-      "CRUD operations",
+      "CRUD operations via database, ORM, API backend",
       "User Authentication",
     ],
     text_technology: "Firebase, p5js, Express, Postgres",
