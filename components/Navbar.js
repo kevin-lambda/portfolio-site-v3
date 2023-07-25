@@ -43,7 +43,7 @@ export default function Navbar() {
           </div>
           <div className="navbar-item">
             <a target="_blank" href={LINK_BLOG}>
-              Blog
+              Learning Journal
             </a>
           </div>
 

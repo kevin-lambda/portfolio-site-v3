@@ -8,6 +8,25 @@ export default function Home() {
     "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md"
 
   const projectFeat1 = {
+    text_title: "Quality Chords - Fullstack guitar chord rendering database",
+    text_description: "Shows guitar chords from a database with CRUD function",
+    text_features: [
+      "API data endpoints",
+      "Data to svg rendering",
+      "Admin CRUD console for all 5 schema",
+    ],
+    text_technology: "Nextjs, Prisma, Typescript",
+    link_proj_page:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#quality-chords",
+    link_live: "",
+    link_github: "",
+    link_medium: "",
+    image_project: "/images/guitar.jpg",
+    active_icon_live: false,
+    active_icon_github: false,
+    active_icon_medium: false,
+  }
+  const projectFeat2 = {
     text_title: "Bowlerator - Business Landing Page",
     text_description: "Landing page for a food bowl generator app",
     text_features: ["Product story emphasized design", "Wireframed layout"],
@@ -21,20 +40,6 @@ export default function Home() {
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: true,
-  }
-  const projectFeat2 = {
-    text_title: "National Park Stamps - Data fetch & rendering",
-    text_description: "A minimalist app that finds national park stamps.",
-    text_features: ["3rd party API integration", "Data filtering"],
-    text_technology: "React, Pico, Javascript",
-    link_proj_page: "https://kevin-lambda.github.io/nat-park-stamps/",
-    link_live: "https://kevin-lambda.github.io/nat-park-stamps/",
-    link_github: "https://github.com/kevin-lambda/nat-park-stamps",
-    link_medium: "",
-    image_project: "/images/parks.jpg",
-    active_icon_live: true,
-    active_icon_github: true,
-    active_icon_medium: false,
   }
   const projectFeat3 = {
     text_title: "Gardening Suggestor - Fullstack recommendation algorithm app",
@@ -107,18 +112,15 @@ export default function Home() {
     active_icon_medium: false,
   }
   const projectAdd5 = {
-    text_title: "Cash Stack - Data fetching",
-    text_description:
-      "Compares the fetched data of a cost of a product, to the height of the cost, stacked as one dollar bills.",
-    text_technology: "jQuery, Cheerio, recharts",
-    link_proj_page:
-      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#cash-stack",
-    link_live:
-      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#cash-stack",
-    link_github: "",
+    text_title: "National Park Stamps - Data fetch & rendering",
+    text_description: "A minimalist app that finds national park stamps.",
+    text_technology: "React, Pico, Javascript",
+    link_proj_page: "https://kevin-lambda.github.io/nat-park-stamps/",
+    link_live: "https://kevin-lambda.github.io/nat-park-stamps/",
+    link_github: "https://github.com/kevin-lambda/nat-park-stamps",
     link_medium: "",
-    active_icon_live: false,
-    active_icon_github: false,
+    active_icon_live: true,
+    active_icon_github: true,
     active_icon_medium: false,
   }
   const projectAdd6 = {
@@ -190,15 +192,16 @@ export default function Home() {
               that lets me thrive in my work.
             </p>
             <p>
-              I write a{" "}
+              I write a lengthy and detailed{" "}
               <a
                 className="general-link-style"
                 target="_blank"
                 href={LINK_BLOG}
               >
-                developer blog
+                developer journal
               </a>{" "}
-              about my software development journey.
+              about my software learning journey. I am open to fullstack
+              development roles.
             </p>
           </div>
           <div className="column" id="about-image-wrapper">
