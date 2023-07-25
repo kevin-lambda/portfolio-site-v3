@@ -23,7 +23,7 @@ export default function Home() {
     link_medium: "",
     image_project: "/images/guitar.jpg",
     active_icon_live: true,
-    active_icon_github: false,
+    active_icon_github: true,
     active_icon_medium: false,
   }
   const projectFeat2 = {
