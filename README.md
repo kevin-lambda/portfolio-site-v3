@@ -10,4 +10,4 @@ Focused on organized and DRY code implementation. Developer journal write up fou
 
 ## Acknowledgements
 
-- [Brittany Chiang](https://brittanychiang.com/) Design inspiration
+- [Brittany Chiang](https://brittanychiang.com/) for design inspiration
