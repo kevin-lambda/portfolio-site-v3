@@ -18,11 +18,11 @@ export default function Home() {
     text_technology: "Nextjs, Prisma, Typescript",
     link_proj_page:
       "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#quality-chords",
-    link_live: "",
+    link_live: "https://guitar-chords-kevin-lambda.vercel.app/",
     link_github: "",
     link_medium: "",
     image_project: "/images/guitar.jpg",
-    active_icon_live: false,
+    active_icon_live: true,
     active_icon_github: false,
     active_icon_medium: false,
   }
