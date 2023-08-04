@@ -9,11 +9,12 @@ export default function Home() {
 
   const projectFeat1 = {
     text_title: "Quality Chords - Fullstack guitar chord rendering database",
-    text_description: "Shows guitar chords from a database with CRUD function",
+    text_description:
+      "A tool to teach guitar chords from a database by movable chord quality shape",
     text_features: [
-      "API data endpoints",
+      "Full backend API endpoints",
       "Data to svg rendering",
-      "Admin CRUD console for all 5 schema",
+      "Admin console with data operations for all schema",
     ],
     text_technology: "Nextjs, Prisma, Typescript",
     link_proj_page: "https://quality-chords.vercel.app/",
@@ -28,7 +29,8 @@ export default function Home() {
   }
   const projectFeat2 = {
     text_title: "Bowlerator - Business Landing Page",
-    text_description: "Landing page for a food bowl generator app",
+    text_description:
+      "Brochure type landing page to emphasize taking action for a food bowl generator app",
     text_features: ["Product story emphasized design", "Wireframed layout"],
     text_technology: "Nextjs, Bulma, Typescript",
     link_proj_page: "https://bowlerator.vercel.app/",
@@ -42,12 +44,13 @@ export default function Home() {
     active_icon_medium: true,
   }
   const projectFeat3 = {
-    text_title: "Gardening Suggestor - Fullstack recommendation algorithm app",
+    text_title: "Worm's Eye View - Garden plant suggestion algorithm",
     text_description: "Suggests suitable gardening plants per user conditions.",
     text_features: [
       "Recommendation algorithm based on user",
-      "CRUD operations via database, ORM, API backend",
+      "Data operations via database, ORM, API backend",
       "User Authentication",
+      "Garden visualizer built with p5js",
     ],
     text_technology: "Firebase, p5js, Express, Postgres",
     link_proj_page: "https://wormseye-d1c52.web.app/",
