@@ -19,8 +19,7 @@ export default function Home() {
     text_technology: "Nextjs, Prisma, Typescript",
     link_proj_page: "https://quality-chords.vercel.app/",
     link_live: "https://quality-chords.vercel.app/",
-    link_github:
-      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#quality-chords",
+    link_github: "https://github.com/kevin-lambda/guitar-chords",
     link_medium: "",
     image_project: "/images/guitar.jpg",
     active_icon_live: true,
