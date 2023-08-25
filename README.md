@@ -2,7 +2,7 @@
 
 This is the third version of my portfolio. Made with Nextjs and Bulma.
 
-Live site here: [https://kevin-quoc-tan-lam.vercel.app/](https://kevin-quoc-tan-lam.vercel.app/)
+Live site here: [https://kevin-lam.vercel.app/](https://kevin-lam.vercel.app/)
 
 ## About
 

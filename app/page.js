@@ -8,9 +8,9 @@ export default function Home() {
     "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md"
 
   const projectFeat1 = {
-    text_title: "Quality Chords - Fullstack guitar chord rendering database",
+    text_title: "Quality Chords - Full-stack guitar chord rendering database",
     text_description:
-      "A tool to teach guitar chords from a database by movable chord quality shape",
+      "A tool to teach guitar chords from a database by movable chord quality shape.",
     text_features: [
       "Full backend API endpoints",
       "Data to svg rendering",
@@ -21,15 +21,18 @@ export default function Home() {
     link_live: "https://quality-chords.vercel.app/",
     link_github: "https://github.com/kevin-lambda/guitar-chords",
     link_medium: "",
+    link_journal:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#quality-chords",
     image_project: "/images/guitar.jpg",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: false,
+    active_icon_journal: true,
   }
   const projectFeat2 = {
     text_title: "Bowlerator - Business Landing Page",
     text_description:
-      "Brochure type landing page to emphasize taking action for a food bowl generator app",
+      "Brochure type landing page to emphasize taking action for a food bowl generator app.",
     text_features: ["Product story emphasized design", "Wireframed layout"],
     text_technology: "Nextjs, Bulma, Typescript",
     link_proj_page: "https://bowlerator.vercel.app/",
@@ -37,18 +40,21 @@ export default function Home() {
     link_github: "https://github.com/kevin-lambda/bowlerator",
     link_medium:
       "https://kevin-lambda.medium.com/jr-dev-asks-whats-a-basic-website-layout-to-use-for-a-business-35ff4a7ef700",
+    link_journal:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#bowlerator",
     image_project: "/images/bowl.jpg",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: true,
+    active_icon_journal: true,
   }
   const projectFeat3 = {
     text_title: "Worm's Eye View - Garden plant suggestion algorithm",
-    text_description: "Suggests suitable gardening plants per user conditions.",
+    text_description:
+      "Four member team project, Suggests suitable gardening plants per user conditions.",
     text_features: [
       "Recommendation algorithm based on user",
       "Data operations via database, ORM, API backend",
-      "User Authentication",
       "Garden visualizer built with p5js",
     ],
     text_technology: "Firebase, p5js, Express, Postgres",
@@ -56,10 +62,12 @@ export default function Home() {
     link_live: "https://wormseye-d1c52.web.app/",
     link_github: "https://github.com/kevin-lambda/fsa-worms-eye-view",
     link_medium: "",
+    link_journal: "",
     image_project: "/images/worm.jpg",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: false,
+    active_icon_journal: false,
   }
 
   const projectAdd1 = {
@@ -71,9 +79,12 @@ export default function Home() {
     link_live: "https://solari-kl.vercel.app/",
     link_github: "https://github.com/kevin-lambda/solari",
     link_medium: "",
+    link_journal:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#solari",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: false,
+    active_icon_journal: true,
   }
   const projectAdd2 = {
     text_title: "Dakine Ipsum - Ruleset based text generator",
@@ -84,21 +95,27 @@ export default function Home() {
     link_live: "https://kevin-lambda.github.io/dakine-ipsum/",
     link_github: "https://github.com/kevin-lambda/dakine-ipsum",
     link_medium: "",
+    link_journal:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#project-dakine-ipsum",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: false,
+    active_icon_journal: true,
   }
   const projectAdd3 = {
     text_title: "Creative projects portfolio - CMS integrated portfolio",
-    text_description: "Portfolio for my non-software focused creative projects",
+    text_description:
+      "Portfolio for my non-software focused creative projects.",
     text_technology: "Gatsbyjs, Contentful CMS, Netlify",
     link_proj_page: "https://kevin-lam.netlify.app/",
     link_live: "https://kevin-lam.netlify.app/",
     link_github: "https://github.com/kevin-lambda/personal-portfolio",
     link_medium: "",
+    link_journal: "",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: false,
+    active_icon_journal: false,
   }
   const projectAdd4 = {
     text_title: "Bitbot - Exploration of chatGPT interaction methodologies",
@@ -109,9 +126,12 @@ export default function Home() {
     link_live: "https://hello-ai-seven.vercel.app/",
     link_github: "",
     link_medium: "",
+    link_journal:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#bit-bot",
     active_icon_live: true,
     active_icon_github: false,
     active_icon_medium: false,
+    active_icon_journal: true,
   }
   const projectAdd5 = {
     text_title: "National Park Stamps - Data fetch & rendering",
@@ -121,9 +141,12 @@ export default function Home() {
     link_live: "https://kevin-lambda.github.io/nat-park-stamps/",
     link_github: "https://github.com/kevin-lambda/nat-park-stamps",
     link_medium: "",
+    link_journal:
+      "https://github.com/kevin-lambda/kevin-lambda/blob/main/dev_log.md#project-nps-stamps",
     active_icon_live: true,
     active_icon_github: true,
     active_icon_medium: false,
+    active_icon_journal: true,
   }
   const projectAdd6 = {
     text_title: "Hiking map redesign - hi-fi prototype in UX case study",
@@ -136,9 +159,11 @@ export default function Home() {
       "https://www.figma.com/proto/yP1A1ZnipOg4OKj0XNO6Rr/WTA-project?page-id=0%3A1&node-id=67-552&viewport=-810%2C149%2C0.11&scaling=scale-down&starting-point-node-id=67%3A552&show-proto-sidebar=1",
     link_github: "",
     link_medium: "",
+    link_journal: "",
     active_icon_live: true,
     active_icon_github: false,
     active_icon_medium: false,
+    active_icon_journal: false,
   }
 
   return (
@@ -161,7 +186,7 @@ export default function Home() {
       </section>
 
       <section className="section is-large pt-3" id="section-about">
-        <h2 className="pb-5" id="section-heading">
+        <h2 className="pb-5 mt-4 pt-6" id="section-heading">
           ABOUT
         </h2>
         <div className="columns">
@@ -202,7 +227,7 @@ export default function Home() {
               >
                 developer journal
               </a>{" "}
-              about my software learning journey. I am open to fullstack
+              about my software learning journey. I am open to full-stack
               development roles.
             </p>
           </div>
@@ -220,7 +245,7 @@ export default function Home() {
       {/* <div>sub section skills TBD w/ demonstration of tech understanding and code application</div> */}
 
       <section className="section is-medium pt-6" id="section-projects">
-        <h2 className="pb-5" id="section-heading">
+        <h2 className="pb-5 mt-4 pt-6" id="section-heading">
           FEATURED PROJECTS
         </h2>
         <div className="projects-all-wrapper">

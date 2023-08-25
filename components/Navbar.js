@@ -10,9 +10,17 @@ export default function Navbar() {
   const [isActive, setisActive] = useState(false)
 
   return (
-    <nav className="navbar p-3" role="navigation" aria-label="main navigation">
+    <nav
+      className="navbar p-3 is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div className="navbar-brand pl-1">
-        <a href="/" className="navbar-item is-size-3 p-1" id="navbar-logo">
+        <a
+          href="#section-hero"
+          className="navbar-item is-size-3 p-1"
+          id="navbar-logo"
+        >
           KL
         </a>
         <a
@@ -39,7 +47,7 @@ export default function Navbar() {
             <a href="#section-about">About</a>
           </div>
           <div className="navbar-item">
-            <a href="#section-projects">Project</a>
+            <a href="#section-projects">Projects</a>
           </div>
           <div className="navbar-item">
             <a target="_blank" href={LINK_BLOG}>

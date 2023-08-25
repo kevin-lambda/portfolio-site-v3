@@ -5,6 +5,7 @@ export default function ProjectFeatured(props) {
   const ICON_GITHUB = "/github.svg"
   const ICON_LIVE = "/extLink.svg"
   const ICON_MEDIUM = "/medium1.svg"
+  const ICON_JOURNAL = "/journal.svg"
 
   const {
     text_title,
@@ -15,10 +16,12 @@ export default function ProjectFeatured(props) {
     link_live,
     link_github,
     link_medium,
+    link_journal,
     image_project,
     active_icon_live,
     active_icon_github,
     active_icon_medium,
+    active_icon_journal,
   } = props.projectData
 
   return (
@@ -85,6 +88,21 @@ export default function ProjectFeatured(props) {
                 width={ICON_SIZE}
                 height={ICON_SIZE}
                 alt="medium link icon"
+              />
+            </a>
+          ) : null}
+          {active_icon_journal ? (
+            <a
+              className="px-2"
+              target="_blank"
+              href={link_journal}
+              id="icon-hover-fill"
+            >
+              <Image
+                src={ICON_JOURNAL}
+                width={ICON_SIZE}
+                height={ICON_SIZE}
+                alt="journal link icon"
               />
             </a>
           ) : null}
