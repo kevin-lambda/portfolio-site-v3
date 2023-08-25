@@ -58,6 +58,7 @@ export default function ProjectFeatured(props) {
                 width={ICON_SIZE}
                 height={ICON_SIZE}
                 alt="live link icon"
+                title="Live demo"
               />
             </a>
           ) : null}
@@ -73,6 +74,7 @@ export default function ProjectFeatured(props) {
                 width={ICON_SIZE}
                 height={ICON_SIZE}
                 alt="github link icon"
+                title="Github"
               />
             </a>
           ) : null}
@@ -88,6 +90,7 @@ export default function ProjectFeatured(props) {
                 width={ICON_SIZE}
                 height={ICON_SIZE}
                 alt="medium link icon"
+                title="Medium article"
               />
             </a>
           ) : null}
@@ -103,6 +106,7 @@ export default function ProjectFeatured(props) {
                 width={ICON_SIZE}
                 height={ICON_SIZE}
                 alt="journal link icon"
+                title="Journal Entry"
               />
             </a>
           ) : null}
