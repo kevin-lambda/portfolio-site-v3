@@ -240,10 +240,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section>experience</section> */}
-      {/* <div>sub section skills TBD w/ demonstration of tech understanding and code application</div> */}
-
       <section className="section is-medium pt-6" id="section-projects">
         <h2 className="pb-5 mt-4 pt-6" id="section-heading">
           FEATURED PROJECTS
@@ -257,9 +253,6 @@ export default function Home() {
             <h2 className="pb-4 pt-5" id="section-heading">
               Additional Projects
             </h2>
-            {/* <h3 className="is-size-5 pb-4" id="project-heading">
-              <a>View all projects</a>
-            </h3> */}
             <div className="tile is-ancestor">
               <ProjectAdditional projectAddData={projectAdd1} />
               <ProjectAdditional projectAddData={projectAdd2} />
